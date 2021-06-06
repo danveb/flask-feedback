@@ -1,4 +1,10 @@
 - python3 -m venv venv
 - source venv/bin/activate
-- pip3 install flask flask-sqlalchemy psycopg2-binary sqlalchemy flask_debugtoolbar
+- pip3 install flask flask-sqlalchemy psycopg2-binary sqlalchemy flask_debugtoolbar flask_bcrypt flask-wtf ipython 
 - touch .gitignore -> add venv/ 
+- createdb flask_feedback (db.drop_all() to drop table) 
+- ipython
+-> %run app.py 
+-> first_user = User(username='juanchova', password='wasabi', email='secret@gmail.com', first_name='Juan', last_name='Cho')
+-> db.drop_all() (will drop table, not database) 
+- check psql -> SELECT * FROM users; 
