@@ -1,0 +1,4 @@
+- python3 -m venv venv
+- source venv/bin/activate
+- pip3 install flask flask-sqlalchemy psycopg2-binary sqlalchemy flask_debugtoolbar
+- touch .gitignore -> add venv/ 
