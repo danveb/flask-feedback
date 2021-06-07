@@ -89,7 +89,7 @@ def login_user():
 # GET /users/<username>
 @app.route('/users/<username>') 
 def user_details(username):
-    if 'user_id' not in session or username != session['user_id']:
+    if 'user_id' not in session:
         flash('Please Login first')
         return redirect('/login')
     else: 
