@@ -9,6 +9,15 @@
 
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <div class="container" style="margin-top: 2em">
+        <!-- Flash Message Category! -->
+        {% for msg in get_flashed_messages() %}
+        <div class="alert alert-info">{{ msg }}</div>
+        {% endfor %}
+    
+        {% block content %}
+        {% endblock %}
+      </div>
+
 </body>
 </html>

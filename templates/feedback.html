@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-{% block title %}Registration{% endblock%}
+{% block title %}New Feedback{% endblock %}
 
 {% block content %}
 
-<h1 class="display-1">Register</h1>
-<p class="lead">Register to Join our Application. Already a User? <a href="/login">Login Here</a></p>
+<h1 class="display-1">Feedback</h1>
+<p class="lead">Please Leave Feedback Below</p>
 
-<!-- Register Form -->
+<!-- Feedback Form -->
 <form method="POST">
     {{ form.hidden_tag() }}
 
@@ -23,7 +23,7 @@
     </p>
     {% endfor %}
 
-    <button class="btn btn-success">Register</button>
+    <button class="btn btn-success">Post Feedback</button>
 
 </form>
 

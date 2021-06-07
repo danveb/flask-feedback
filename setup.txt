@@ -7,4 +7,5 @@
 -> %run app.py 
 -> first_user = User(username='juanchova', password='wasabi', email='secret@gmail.com', first_name='Juan', last_name='Cho')
 -> db.drop_all() (will drop table, not database) 
+-> peach = User.query.filter_by(username="peach_the_dog")
 - check psql -> SELECT * FROM users; 
